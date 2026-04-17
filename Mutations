@@ -1,0 +1,12 @@
+def mutate_string(string, position, character):
+    # Approach 1: Slicing
+    return string[:position] + character + string[position+1:]
+    # Approach 2: List conversion (alternative)
+    # l = list(string)
+    # l[position] = character
+    # return ''.joi
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
